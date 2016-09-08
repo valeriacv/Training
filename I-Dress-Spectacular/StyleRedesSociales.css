@@ -1,0 +1,88 @@
+header{
+	margin-left: 600px;
+}
+
+#facebook{
+	width: 175px;
+	height: 320px;
+	margin-left: 200px;
+    padding: 25px;
+    background-color: #2833ce;
+    color: #ffffff;
+    float: left;  
+}
+
+#facebook p {
+	font-family: 'Nunito', sans-serif;
+}
+
+#faceImg{
+	background: url('social-media-icons.png') no-repeat -60px -62px;
+	width: 51px;
+	height: 51px;
+	position: relative;
+	left: 64px;
+	bottom: -95px;
+}
+
+#faceImg:hover
+{
+	background: url('social-media-icons.png') no-repeat -60px -5px;
+}
+
+
+#twitter{
+	width:  175px;
+	height: 320px;
+    margin-left: 150px;
+    padding: 25px;
+    background-color: #26bfec;
+    color: #ffffff;
+    float: left;
+}
+
+#twitter p{
+	font-family: 'Arvo', serif;
+}
+
+#twitterImg{
+	background: url('social-media-icons.png') no-repeat -3px -62px;
+	width: 51px;
+	height: 51px;
+	position: relative;
+	left: 64px;
+	bottom: -55px;
+}
+
+#twitterImg:hover
+{
+	background: url('social-media-icons.png') no-repeat -3px -5px;
+}
+
+#instagram{
+	width:  175px;
+	height: 320px;
+     margin-left: 150px;
+    padding: 25px;
+    background-color: #904c07;
+    color: #ffffff;
+    float: left;
+}
+
+#instagram p{
+	font-family: 'Cuprum', sans-serif;
+}
+
+#instagramImg{
+	background: url('social-media-icons.png') no-repeat -117px -62px;
+	width: 51px;
+	height: 51px;
+	position: relative;
+	left: 64px;
+	bottom: -85px;
+}
+
+#instagramImg:hover
+{
+	background: url('social-media-icons.png') no-repeat -117px -5px;
+}
