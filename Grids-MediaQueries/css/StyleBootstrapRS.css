@@ -1,30 +1,31 @@
 header{
 	text-align: center;
+	margin-bottom: 5em;
+	margin-top:5em;
 }
 
 .container{
-	width: 100%;
-	position: absolute;
-	margin: auto;
+	height: 100%;
+	margin-top: 5em;
 }
 
 .social-network{
-	position: relative;
-    height: 22em;
-	width: 15em;
+	display: block;
+	min-height: 25em;
 	padding: 1.5em;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	position: relative;
     color: #ffffff;
     float: left;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .image{
 	width: 51px;
 	height: 51px;
 	position: absolute;
-    bottom: 1em;
-    left: 6em;
+    bottom: 5%;
+    left: 45%;
 }
 
 .facebook{
@@ -69,7 +70,7 @@ header{
 	background: url('../img/social-media-icons.png') no-repeat -117px -5px;
 }
 
-@media only screen and (max-device-width: 480px) { 
+@media only screen and (max-device-width: 450px){ 
 	.facebook{
 		background-color: #27782d;
 	}
