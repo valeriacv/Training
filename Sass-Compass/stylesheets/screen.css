@@ -1,0 +1,537 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Variables*/
+/***********COLORS***********/
+/***************************/
+/***********FONTS***********/
+/***************************/
+/***********SIZES***********/
+/***************************/
+/*HEADER STYLE*/
+/* line 35, ../sass/print.scss */
+header {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100px;
+}
+
+/*Body Style*/
+/* line 44, ../sass/print.scss */
+body {
+  font-size: 15px;
+  background-color: white;
+  border-top: 10px solid black;
+  font-family: "Open Sans", sans-serif;
+  color: #575757;
+}
+
+/*Navigation bar*/
+/* line 53, ../sass/print.scss */
+nav {
+  position: absolute;
+  width: 540px;
+  top: 35px;
+  right: 3px;
+  border-top: 1px solid #C8C8C8;
+  border-bottom: 1px solid #C8C8C8;
+}
+/* line 60, ../sass/print.scss */
+nav ul {
+  list-style-type: none;
+}
+/* line 63, ../sass/print.scss */
+nav ul li {
+  float: left;
+  margin-left: 12px;
+  line-height: normal;
+}
+/* line 68, ../sass/print.scss */
+nav ul li a {
+  color: #666666;
+  font-size: 17px;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin-top: 5px;
+  margin-right: 6px;
+}
+/* line 78, ../sass/print.scss */
+nav ul li a:hover {
+  color: #888888;
+}
+
+/* line 85, ../sass/print.scss */
+.bg {
+  background-image: url(../images/bg.png);
+  background-position: left top;
+  background-repeat: repeat;
+}
+
+/* line 92, ../sass/print.scss */
+.headers-intro {
+  position: relative;
+  color: #666666;
+  text-align: left;
+}
+
+/*TITLES*/
+/* line 102, ../sass/print.scss */
+h1 {
+  @extends .headers-intro;
+  font-size: 42px;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+/* line 110, ../sass/print.scss */
+h1 span {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+/* line 116, ../sass/print.scss */
+h2 {
+  @extends .headers-intro;
+  font-size: 15px;
+  border-bottom: 1px solid #C8C8C8;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+/* line 125, ../sass/print.scss */
+h3 {
+  color: #CC3333;
+  font-size: 22px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-weight: 600;
+}
+
+/* line 133, ../sass/print.scss */
+h4 {
+  color: #CC3333;
+  font-size: 22px;
+  padding-bottom: 15px;
+  padding-top: 30px;
+  font-weight: 500;
+}
+
+/* line 141, ../sass/print.scss */
+h5 {
+  color: #666666;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  font-weight: 600;
+}
+
+/*GROUPS*/
+/* line 151, ../sass/print.scss */
+.group-details, .group1, .group2, .group3, .group4 {
+  background: transparent;
+  margin-bottom: 22px;
+  margin-top: 22px;
+  float: left;
+  line-height: 25px;
+}
+
+/* line 171, ../sass/print.scss */
+.group4 {
+  margin-top: 12px;
+  border-top: 1px solid #C8C8C8;
+}
+
+/*QUOTE*/
+/* line 179, ../sass/print.scss */
+.pulledquote {
+  color: #CC3333;
+  border: 1px solid #C8C8C8;
+  background-color: #EDEDED;
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 34px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/*CONTAINERS*/
+/* line 192, ../sass/print.scss */
+.holder_content1a {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* line 197, ../sass/print.scss */
+.holder_content1b {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*FOOTER*/
+/* line 204, ../sass/print.scss */
+footer {
+  color: white;
+  position: relative;
+  height: 90px;
+  clear: both;
+  width: 100%;
+  background-image: url(../images/footer.png);
+}
+
+/* line 213, ../sass/print.scss */
+.footer-details, #FooterOne, #FooterTwo {
+  position: absolute;
+  color: white;
+  top: 32px;
+  font-size: 14px;
+}
+
+/* line 220, ../sass/print.scss */
+#FooterOne {
+  right: 225px;
+}
+
+/* line 225, ../sass/print.scss */
+#FooterTwo {
+  left: 225px;
+}
+/* line 228, ../sass/print.scss */
+#FooterTwo a {
+  color: #676767;
+}
+/* line 231, ../sass/print.scss */
+#FooterTwo a:hover {
+  color: #343434;
+}
+
+/*LOGO*/
+/* line 237, ../sass/print.scss */
+#logo {
+  position: relative;
+  float: left;
+  left: 0px;
+  top: 34px;
+}
+
+/*BUTTON*/
+/* line 253, ../sass/print.scss */
+.button {
+  font-size: 15px;
+  position: relative;
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin-top: 14px;
+  text-align: center;
+  text-decoration: none;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 8px 18px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+/* line 267, ../sass/print.scss */
+.button:hover {
+  background-color: #333333;
+}
+
+/* line 271, ../sass/print.scss */
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+/*PHOTOS*/
+/* line 277, ../sass/print.scss */
+a.photo_hover3 {
+  position: relative;
+  float: left;
+  margin: 16px 13px 8px 0;
+  padding: 8px;
+  background-color: white;
+  border: 1px solid #D6D6D6;
+}
+
+/* line 285, ../sass/print.scss */
+a.photo_hover3:hover {
+  border: 1px solid #D6D6D6;
+  background-color: transparent;
+  opacity: 0.9;
+  z-index: 1000;
+}
+
+/*CONTAINERS-ROWS-COLUMNS*/
+/* line 10, ../sass/screen.scss */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* line 15, ../sass/screen.scss */
+.row {
+  margin: 0 auto;
+  max-width: 1140px;
+  min-width: 755px;
+  width: 100%;
+}
+
+/* line 22, ../sass/screen.scss */
+.col-position, .fourcol, .sixcol {
+  margin-right: 3.8%;
+  float: left;
+  min-height: 1px;
+}
+
+/* line 28, ../sass/screen.scss */
+.fourcol {
+  width: 30.75%;
+}
+
+/* line 32, ../sass/screen.scss */
+.sixcol {
+  width: 48%;
+}
+
+/* line 36, ../sass/screen.scss */
+.twelvecol {
+  width: 100%;
+  float: left;
+}
+
+/* line 41, ../sass/screen.scss */
+.last {
+  margin-right: 0px;
+}
+
+/* line 45, ../sass/screen.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*SCREEN MAX WIDTH 1050px*/
+@media handheld, only screen and (max-width: 1050px) {
+  /* line 52, ../sass/screen.scss */
+  #FooterTwo {
+    left: 20px;
+  }
+
+  /* line 56, ../sass/screen.scss */
+  #FooterOne {
+    right: 90px;
+  }
+}
+/*SCREEN MAX WIDTH 800px*/
+@media handheld, only screen and (max-width: 800px) {
+  /* line 64, ../sass/screen.scss */
+  #FooterTwo {
+    left: 15px;
+  }
+
+  /* line 68, ../sass/screen.scss */
+  #FooterOne {
+    right: 70px;
+  }
+
+  /* line 72, ../sass/screen.scss */
+  h1 {
+    font-size: 34px;
+    padding: 10px;
+  }
+
+  /* line 77, ../sass/screen.scss */
+  h2 {
+    padding: 10px;
+  }
+
+  /* line 81, ../sass/screen.scss */
+  #logo {
+    margin-left: 5px;
+  }
+}
+/*SCREEN MAX WIDTH 768*/
+@media handheld, only screen and (max-width: 768px) {
+  /* line 91, ../sass/screen.scss */
+  .container-row-style, .row, body, .container {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: left;
+  }
+
+  /* line 103, ../sass/screen.scss */
+  .row .fourcol, .row .sixcol, .row .twelvecol {
+    width: auto;
+    float: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+/*SCREEN MAX WIDTH 735*/
+@media handheld, only screen and (max-width: 735px) {
+  /* line 124, ../sass/screen.scss */
+  nav {
+    float: none;
+    margin-top: 67px;
+    left: 12px;
+    border: none;
+    width: 90%;
+  }
+  /* line 130, ../sass/screen.scss */
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  /* line 134, ../sass/screen.scss */
+  nav ul li {
+    float: none;
+  }
+  /* line 136, ../sass/screen.scss */
+  nav ul li a {
+    text-align: left;
+    text-decoration: none;
+    border-bottom: 1px solid #C8C8C8;
+  }
+
+  /* line 145, ../sass/screen.scss */
+  .intro {
+    width: 100%;
+    background: transparent;
+    margin-top: 300px;
+    margin-bottom: 20px;
+  }
+
+  /* line 152, ../sass/screen.scss */
+  #logo {
+    margin-left: 18px;
+  }
+
+  /* line 156, ../sass/screen.scss */
+  #FooterOne {
+    font-size: 13px;
+  }
+
+  /* line 160, ../sass/screen.scss */
+  #FooterTwo {
+    display: none;
+  }
+}
+/*SCREEN MAX WIDTH 690px*/
+@media handheld, only screen and (max-width: 690px) {
+  /* line 169, ../sass/screen.scss */
+  #FooterTwo {
+    left: 10px;
+  }
+
+  /* line 173, ../sass/screen.scss */
+  #FooterOne {
+    right: 30px;
+  }
+}
+/*SCREEN MAX WIDTH 480px*/
+@media handheld, only screen and (max-width: 480px) {
+  /* line 182, ../sass/screen.scss */
+  .pulledquote {
+    width: 88%;
+  }
+}
+@media handheld, only screen and (max-width: 320px) {
+  /* line 189, ../sass/screen.scss */
+  h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  /* line 194, ../sass/screen.scss */
+  h1 span {
+    font-size: 18px;
+  }
+
+  /* line 198, ../sass/screen.scss */
+  h2 {
+    padding: 10px;
+  }
+}
