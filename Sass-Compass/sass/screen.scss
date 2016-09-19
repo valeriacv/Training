@@ -1,0 +1,201 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "print";
+
+/*CONTAINERS-ROWS-COLUMNS*/
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.row {
+	margin:0 auto;
+	max-width:1140px;
+	min-width:755px;
+	width:100%;
+}
+
+.col-position{
+	margin-right: 3.8%;
+	float: left;
+	min-height: 1px;
+}
+
+.fourcol{
+	@extend .col-position;
+	width: 30.75%;	
+}
+.sixcol{
+	@extend .col-position;
+	width: 48%;	
+}
+.twelvecol {
+	width: 100%;
+	float: left;
+}
+
+.last {
+	margin-right: 0px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*SCREEN MAX WIDTH 1050px*/
+@media handheld, only screen and (max-width: 1050px) {
+	#FooterTwo{
+		left: 20px;
+	}
+
+	#FooterOne{
+		right:90px;
+	}
+}
+
+/*SCREEN MAX WIDTH 800px*/
+@media handheld, only screen and (max-width: 800px) {
+	
+	#FooterTwo{
+		left: 15px;
+	}
+
+	#FooterOne{
+		right:70px;
+	}
+
+	h1{
+		font-size:34px;
+		padding:10px;
+	}
+	
+	h2{
+		padding:10px;
+	}	
+
+	#logo{
+		margin-left:5px;
+	}
+
+}
+
+
+/*SCREEN MAX WIDTH 768*/
+@media handheld, only screen and (max-width: 768px) {
+
+	.container-row-style{
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+		float:left;
+	}
+
+	.row{
+		@extend .container-row-style;
+		.fourcol, .sixcol, .twelvecol{
+			width: auto;
+			float: none;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+	body{
+		@extend .container-row-style;
+	}
+
+	.container {
+		@extend .container-row-style;
+	}	
+}
+
+	  
+/*SCREEN MAX WIDTH 735*/
+@media handheld, only screen and (max-width: 735px) {
+	   
+	nav{
+		float: none;
+		margin-top:67px;
+		left:12px;
+		border:none;
+		width: 90%;
+		ul{	
+		    margin: 0;
+		    padding: 0;
+
+			li{
+				float: none;
+				a{
+					text-align:left;
+					text-decoration:none;
+					border-bottom: 1px solid $border-color;
+				}
+			}
+		}
+	}
+	
+	.intro{
+		width:100%;
+		background:transparent;
+		margin-top:300px;
+		margin-bottom:20px;
+	}
+
+	#logo{
+		margin-left:18px;	
+	}
+
+	#FooterOne{
+		font-size:13px;
+	}
+
+	#FooterTwo{
+		display:none;	
+	}
+
+}
+
+
+/*SCREEN MAX WIDTH 690px*/
+@media handheld, only screen and (max-width: 690px) {
+	#FooterTwo{
+		left: 10px;
+	}
+
+	#FooterOne{
+		right:30px;
+	}
+
+}
+
+/*SCREEN MAX WIDTH 480px*/
+@media handheld, only screen and (max-width: 480px) {
+	
+	.pulledquote{
+		width:88%;
+	}	
+}
+   
+@media handheld, only screen and (max-width: 320px) {
+
+	h1{
+		font-size:20px;
+		padding:10px;
+	}
+
+	h1 span{
+		font-size: 18px;
+	}
+
+	h2{
+		padding:10px;
+	}	
+}
