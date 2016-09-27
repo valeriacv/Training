@@ -2,34 +2,6 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 
-/* Variables*/
-
-/***********COLORS***********/
-$text-color: #575757;
-$header-text-color: #666666;
-$a-hover-color: #888888;
-$border-color: #C8C8C8;
-$titles-color: #CC3333;
-$blockquote-color-bg: #EDEDED;
-$hover-button-color: #333333;
-$border-photo-color: #D6D6D6;
-$footer-link-color: #676767;
-$footer-link-hover-color: #343434;
-/***************************/
-
-/***********FONTS***********/
-$text-font: 'Open Sans', sans-serif;
-/***************************/
-
-/***********SIZES***********/
-$nav-font-size: 17px;
-$body-font-size: 15px;
-$footer-font-size: 14px;
-$h1-font-size: 42px;
-$h3-font-size: 22px;
-/***************************/
-
-
 
 /*HEADER STYLE*/			
 header{
@@ -65,7 +37,7 @@ nav{
 			margin-left:12px;
 			line-height: normal;
 			
-			a{
+			.menu-options{
 				color: $header-text-color;
 				font-size: $nav-font-size;
 				text-decoration: none;
@@ -75,7 +47,7 @@ nav{
 				margin-top:5px;
 				margin-right:6px;
 			}
-			a:hover{
+			.menu-options:hover{
 				color: $a-hover-color;
 			}
 		}
