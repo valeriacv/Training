@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>JQuery & Handlebars</title>
+	<!--HANDLEBARS-->
+   	<script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+   	<!--JQUERY-->
+   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+</head> 
+<body>
+
+	<script id="template" type="text/template">
+		{{#users}}
+			<div class="person-info">
+				<div class="image">
+			    	<img src={{Profile}}>
+
+			    	<h2>{{inc @index}}</h2>
+
+			    	<a href="#" class="button">Show</a>
+				</div>
+				<div class="twitter-info">
+					
+					<p>Tweets: <span class="cantidad">{{Tweets}}</span></p>
+					<p>Followers: <span class="cantidad">{{Followers}} </span></p>
+					<p>Retweets: <span class="cantidad">{{ReTweets}}</span>
+					<a class="handle-link" href="https://twitter.com/account/{{inc @index}}">Handle</a></p>
+					
+				</div>
+			</div>
+			<div id="prueba"></div>
+		{{/users}}
+
+
+	</script>
+
+<script type="text/javascript" src="js/jquery_exercise.js"></script>
+
+</body>
+</html>	
