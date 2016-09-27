@@ -70,7 +70,7 @@ header{
 	background: url('../img/social-media-icons.png') no-repeat -117px -5px;
 }
 
-@media only screen and (max-device-width: 450px){ 
+@media only screen and (max-device-width: 768px){ 
 	.facebook{
 		background-color: #27782d;
 	}
