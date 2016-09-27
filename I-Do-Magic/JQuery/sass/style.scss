@@ -1,0 +1,76 @@
+$image-size:150px;
+$person-info-width: 600px;
+$image-margin-bottom:10px;
+$image-margin-top: 10px;
+$image-margin-right:5px;
+$image-margin-left: 15px;
+
+
+$border-width: 2px;
+$button-background-color: #e7e7e7;
+
+
+
+.person-info{
+	width: $image-size + 8;
+	height: $image-size;
+	border: $border-width solid black;
+	border-radius: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.image { 
+   position: absolute; 
+   width: $image-size; /* for IE 6 */
+   height: $image-size;
+   float: left;
+   margin-bottom: $image-margin-bottom;
+   margin-top: $image-margin-top;
+   margin-right: $image-margin-right;
+   margin-left: $image-margin-left;
+}
+
+.button{
+	position: absolute;
+	left: 10%;
+	bottom: 15%;
+	width: 100px;
+	font-size: 16px;
+	text-align: center;
+	border: 2px solid;
+    border-radius: 4px;
+    background-color: $button-background-color; 
+    color: black;
+    text-decoration: none;
+}
+
+.handle-link{
+	position: absolute;
+	right: 10px;
+	float: right;
+
+}
+
+.twitter-info{
+	position: absolute;
+	left: 230px;
+	height: $image-size;
+	width: $person-info-width - 250;
+	display: none;
+		
+}
+
+
+h2 { 
+	position: absolute;
+	right: 15%;
+	top: 5%;
+	margin: 0;
+	color: black; 
+}
+
+p{
+	padding-bottom: 20px;
+}
