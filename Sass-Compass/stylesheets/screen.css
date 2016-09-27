@@ -1,0 +1,337 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/***********COLORS***********/
+/***************************/
+/***********FONTS***********/
+/***********SIZES***********/
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/*HEADER STYLE*/
+header {
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100px; }
+
+/*Body Style*/
+body {
+  font-size: 15px;
+  background-color: white;
+  border-top: 10px solid black;
+  font-family: "Open Sans", sans-serif;
+  color: #575757; }
+
+/*Navigation bar*/
+nav {
+  position: absolute;
+  width: 540px;
+  top: 35px;
+  right: 3px;
+  border-top: 1px solid #C8C8C8;
+  border-bottom: 1px solid #C8C8C8; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      float: left;
+      margin-left: 12px;
+      line-height: normal; }
+      nav ul li .menu-options {
+        color: #666666;
+        font-size: 17px;
+        text-decoration: none;
+        display: block;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        margin-top: 5px;
+        margin-right: 6px; }
+      nav ul li .menu-options:hover {
+        color: #888888; }
+
+.bg {
+  background-image: url(../images/bg.png);
+  background-position: left top;
+  background-repeat: repeat; }
+
+.headers-intro {
+  position: relative;
+  color: #666666;
+  text-align: left; }
+
+/*TITLES*/
+h1 {
+  @extends .headers-intro;
+  font-size: 42px;
+  padding-top: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: 600;
+  line-height: 1.5em; }
+  h1 span {
+    font-size: 25px;
+    margin-left: 10px; }
+
+h2 {
+  @extends .headers-intro;
+  font-size: 15px;
+  border-bottom: 1px solid #C8C8C8;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  padding-bottom: 15px; }
+
+h3 {
+  color: #CC3333;
+  font-size: 22px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-weight: 600; }
+
+h4 {
+  color: #CC3333;
+  font-size: 22px;
+  padding-bottom: 15px;
+  padding-top: 30px;
+  font-weight: 500; }
+
+h5 {
+  color: #666666;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  font-weight: 600; }
+
+/*GROUPS*/
+.group-details, .group1, .group2, .group3, .group4 {
+  background: transparent;
+  margin-bottom: 22px;
+  margin-top: 22px;
+  float: left;
+  line-height: 25px; }
+
+.group4 {
+  margin-top: 12px; }
+
+/*QUOTE*/
+.pulledquote {
+  color: #CC3333;
+  border: 1px solid #C8C8C8;
+  background-color: #EDEDED;
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 34px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+/*CONTAINERS*/
+.holder_content1a {
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.holder_content1b {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/*FOOTER*/
+footer {
+  color: white;
+  position: relative;
+  height: 90px;
+  clear: both;
+  width: 100%;
+  background-image: url(../images/footer.png); }
+
+.footer-details, #FooterOne, #FooterTwo {
+  position: absolute;
+  color: white;
+  top: 32px;
+  font-size: 14px; }
+
+#FooterOne {
+  right: 225px; }
+
+#FooterTwo {
+  left: 225px; }
+  #FooterTwo a {
+    color: #676767; }
+  #FooterTwo a:hover {
+    color: #343434; }
+
+/*LOGO*/
+#logo {
+  position: relative;
+  float: left;
+  left: 0px;
+  top: 34px; }
+
+/*BUTTON*/
+.button {
+  font-size: 15px;
+  position: relative;
+  background-color: black;
+  display: inline-block;
+  color: white;
+  margin-top: 14px;
+  text-align: center;
+  text-decoration: none;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 8px 18px;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+.button:hover {
+  background-color: #333333; }
+
+.button:active {
+  position: relative;
+  top: 1px; }
+
+/*PHOTOS*/
+a.photo_hover3 {
+  position: relative;
+  float: left;
+  margin: 16px 13px 8px 0;
+  padding: 8px;
+  background-color: white;
+  border: 1px solid #D6D6D6; }
+
+a.photo_hover3:hover {
+  border: 1px solid #D6D6D6;
+  background-color: transparent;
+  opacity: 0.9;
+  z-index: 1000; }
+
+/*CONTAINERS-ROWS-COLUMNS*/
+.container {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.row {
+  margin: 0 auto;
+  max-width: 1140px;
+  min-width: 755px;
+  width: 100%; }
+
+.col-position, .fourcol, .sixcol {
+  margin-right: 3.8%;
+  float: left;
+  min-height: 1px; }
+
+.fourcol {
+  width: 30.75%; }
+
+.sixcol {
+  width: 48%; }
+
+.twelvecol {
+  width: 100%;
+  float: left; }
+
+.last {
+  margin-right: 0px; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*SCREEN MAX WIDTH 1050px*/
+@media handheld, only screen and (max-width: 1050px) {
+  #FooterTwo {
+    left: 20px; }
+
+  #FooterOne {
+    right: 90px; } }
+/*SCREEN MAX WIDTH 800px*/
+@media handheld, only screen and (max-width: 800px) {
+  #FooterTwo {
+    left: 15px; }
+
+  #FooterOne {
+    right: 70px; }
+
+  h1 {
+    font-size: 34px;
+    padding: 10px; }
+
+  h2 {
+    padding: 10px; }
+
+  #logo {
+    margin-left: 5px; } }
+/*SCREEN MAX WIDTH 768*/
+@media handheld, only screen and (max-width: 768px) {
+  .container-row-style, .row, body, .container {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    float: left; }
+
+  .row .fourcol, .row .sixcol, .row .twelvecol {
+    width: auto;
+    float: none;
+    padding-left: 20px;
+    padding-right: 20px; } }
+/*SCREEN MAX WIDTH 735*/
+@media handheld, only screen and (max-width: 735px) {
+  nav {
+    float: none;
+    margin-top: 67px;
+    left: 12px;
+    border: none;
+    width: 90%; }
+    nav ul {
+      margin: 0;
+      padding: 0; }
+      nav ul li {
+        float: none; }
+        nav ul li a {
+          text-align: left;
+          text-decoration: none;
+          border-bottom: 1px solid #C8C8C8; }
+
+  .intro {
+    width: 100%;
+    background: transparent;
+    margin-top: 300px;
+    margin-bottom: 20px; }
+
+  #logo {
+    margin-left: 18px; }
+
+  #FooterOne {
+    font-size: 13px; }
+
+  #FooterTwo {
+    display: none; } }
+/*SCREEN MAX WIDTH 690px*/
+@media handheld, only screen and (max-width: 690px) {
+  #FooterTwo {
+    left: 10px; }
+
+  #FooterOne {
+    right: 30px; } }
+/*SCREEN MAX WIDTH 480px*/
+@media handheld, only screen and (max-width: 480px) {
+  .pulledquote {
+    width: 88%; } }
+@media handheld, only screen and (max-width: 320px) {
+  h1 {
+    font-size: 20px;
+    padding: 10px; }
+
+  h1 span {
+    font-size: 18px; }
+
+  h2 {
+    padding: 10px; } }
+
+/*# sourceMappingURL=screen.css.map */
