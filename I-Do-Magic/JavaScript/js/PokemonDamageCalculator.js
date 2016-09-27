@@ -30,41 +30,41 @@ var Defender = new pokemon("Charmander", "fire", 200, 150);
 /**************************************FUNCTIONS*************************************/
 
 /**
- * Constructor clase pokemon
- * @param  {[string]} pNombre_pokemon [el nombre del pokemon]
- * @param  {[string]} pTipo_pokemon   [el tipo del pokemon - (water, fire, grass, electric)]
- * @param  {[int]} pAttack            [el poder de ataque del pokemon]
- * @param  {[int]} pDefense           [poder en defensa del pokemon]
- * @return {[Objeto de clase pokemon]}                 [objeto pokemon que posee los atributos de nombre, tipo, ataque, defensa]
- */
-function pokemon(pNombre_pokemon, pTipo_pokemon, pAttack, pDefense){
-	this.name = pNombre_pokemon;
-	this.tipo = pTipo_pokemon;
+ * Pokemon class constructor
+ * @param  {[string]} pPokemon_name   [the name of the pokemon]
+ * @param  {[string]} pPokemon_type   [the type of the pokemon - (water, fire, grass, electc)]
+ * @param  {[int]} pAttack            [power in attack that the pokemon has]
+ * @param  {[int]} pDefense           [power in defense that the pokemon has]i
+ * @return {[Objeto de clase pokemon]}                 [pokemon object that has the attributes of: name, type, attack, defense]
+ */r
+function pokemon(pPokemon_name, pPokemon_type, pAttack, pDefense){
+	this.name = pPokemon_name;
+	this.type = pPokemon_type;
 	this.attack = pAttack;
 	this.defense = pDefense;
 }
 /**
- * Escribe en pantalla la información sobre un pokemon
- * @param  {[pokemon]} pPokemon [Objeto pokemon]
- * @return {[void]}          [description]
+ * Write in the screen the information of a pokemon
+ * @param  {[pokemon]} pPokemon [Pokemon object]
+ * @return {[void]}      
  */
 function printPokemonInfo(pPokemon){ 
 	document.write("Nombre: " + pPokemon.name);
-   	document.write("<br>tipo: " + pPokemon.tipo);
+   	document.write("<br>type: " + pPokemon.type);
    	document.write("<br>attack: " + pPokemon.attack);
   	document.write("<br>Defense: " + pPokemon.defense);
   	document.write("<br>"); 
 }
 
 /**
- * Recorre el array de rules para determinar el efectividad que tiene un ataque dependiendo del tipo del pokemon atacante y el pokemon que se defiende
- * @param  {[pokemon]} pokemonAttacker [El pokemon que realiza el ataque]
- * @param  {[pokemon]} pokemonDefender [pokemon que recibe el ataque]
- * @return {[int]}                 [cantidad de daño que se le causo al pokemon defendiendose]
+ * Runs through an array of rules and gets the effectivity of an attack depending in the type of pokemon attacker and the type of pokemon defender
+ * @param  {[pokemon]} pokemonAttacker [Pokemon that attacks]
+ * @param  {[pokemon]} pokemonDefender [Pokemon that recibes the attack]
+ * @return {[int]}                 [amount of damage made to the pokemon defender]
  */
 function damage(pokemonAttacker, pokemonDefender){
-	var pokemon_attacker_type = pokemonAttacker.tipo;
-	var pokemon_defender_type = pokemonDefender.tipo;
+	var pokemon_attacker_type = pokemonAttacker.type;
+	var pokemon_defender_type = pokemonDefender.type;
 	for(var index_for_attacker = 0; index_for_attacker < rules.length; index_for_attacker++){
 		if(rules[index_for_attacker].type_attacker == pokemon_attacker_type){
 			for(var index_for_defenders = index_for_attacker; index_for_defenders < rules.length; index_for_defenders++){
@@ -78,11 +78,11 @@ function damage(pokemonAttacker, pokemonDefender){
 }
 
 /**
- * Realiza la formula para determinar la cantidad de daño producido de un pokemon a otro
- * @param  {[int]} pAttacker_power_attack       [es el poder de ataque que posee el pokemon de ataque]
- * @param  {[int]} pDefender_power_defense      [poder de defensa que posee el pokemon de defensa]
- * @param  {[int]} pEffectiveness 				[efectividad que tiene el ataque - (super efectivo:2, neutral:1, no tan efectivo: 0.5)]
- * @return {[int]}                				[cantidad de daño que se le causo al pokemon defendiendose]
+ * Calculate the amount of damage made from one pokemon to another
+ * @param  {[int]} pAttacker_power_attack       [the amount of power attack that the pokemon attacker has]
+ * @param  {[int]} pDefender_power_defense      [the amount of power defense that the pokemon defender has]
+ * @param  {[int]} pEffectiveness 				[attack effectivity - (super effective:2, neutral:1, not effective: 0.5)]
+ * @return {[int]}                				[amount of damage made to the defender pokemon]
  */
 function damage_made(pAttacker_power_attack, pDefender_power_defense, pEffectiveness)
 {
@@ -90,7 +90,7 @@ function damage_made(pAttacker_power_attack, pDefender_power_defense, pEffective
 }
 
 /**
- * Escribe en el documento la cantidad de daño realizado
+ * Write in the document the amount of damage amount
  * @return {[void]} 
  */
 function printDamage(){
