@@ -66,9 +66,9 @@ function damage(pokemonAttacker, pokemonDefender){
 	var pokemon_attacker_type = pokemonAttacker.type;
 	var pokemon_defender_type = pokemonDefender.type;
 	for(var index_for_attacker = 0; index_for_attacker < rules.length; index_for_attacker++){
-		if(rules[index_for_attacker].type_attacker == pokemon_attacker_type){
+		if(rules[index_for_attacker].type_attacker === pokemon_attacker_type){
 			for(var index_for_defenders = index_for_attacker; index_for_defenders < rules.length; index_for_defenders++){
-				if(rules[index_for_defenders].type_defender == pokemon_defender_type){
+				if(rules[index_for_defenders].type_defender === pokemon_defender_type){
 					return damage_made(pokemonAttacker.attack, pokemonDefender.defense, rules[index_for_defenders].effectiveness);
 					break;
 				}
