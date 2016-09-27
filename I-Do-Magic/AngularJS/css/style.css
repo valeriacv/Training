@@ -1,0 +1,53 @@
+.person-info {
+  width: 600px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.image {
+  position: absolute;
+  width: 150px;
+  /* for IE 6 */
+  height: 150px;
+  float: left;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 15px; }
+
+.handle-link {
+  position: absolute;
+  right: 10px;
+  float: right; }
+
+.twitter-info {
+  position: absolute;
+  left: 230px;
+  height: 150px;
+  width: 350px; }
+
+.filter {
+  list-style-type: none;
+  overflow: hidden;
+  color: blue; }
+
+.options {
+  float: left;
+  display: inline;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-decoration: underline; }
+
+h2 {
+  position: absolute;
+  right: 15%;
+  top: 5%;
+  margin: 0;
+  color: black; }
+
+p {
+  padding-bottom: 3px; }
+
+/*# sourceMappingURL=style.css.map */
